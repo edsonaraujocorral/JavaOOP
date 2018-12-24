@@ -2,22 +2,17 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
+        Gerente g1 = new Gerente();
+        g1.setNome("Edson");
+        g1.setSalario(2000);
 
-        Gerente edson = new Gerente();
-        edson.setNome("Edson de Araujo Corral");
-        edson.setCpf("066.202.869-41");
-        edson.setSalario(5000.00);
-        edson.setSenha(121412);
+        Funcionario f = new Funcionario();
+        f.setSalario(1500);
 
-        boolean autentidaco = edson.autentica(121412);
-        if(autentidaco == true) {
-            System.out.println("Voce esta autenticado");
-        } else {
-            System.out.println("Voce nao esta autenticado");
-        }
+        ControleBonificacao controle = new ControleBonificacao();
+        controle.registra(g1);
+        controle.registra(f);
 
-        System.out.println("Nome - " + edson.getNome());
-        System.out.println("CPF - " + edson.getCpf());
-        System.out.println("Salario R$: " + edson.getSalario());
+        System.out.println(controle.getSoma());
     }
 }
