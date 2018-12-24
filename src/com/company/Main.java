@@ -9,9 +9,13 @@ public class Main {
         Funcionario f = new Funcionario();
         f.setSalario(1500);
 
+        EditorVideo editor = new EditorVideo();
+        editor.setSalario(2100);
+
         ControleBonificacao controle = new ControleBonificacao();
         controle.registra(g1);
         controle.registra(f);
+        controle.registra(editor);
 
         System.out.println(controle.getSoma());
     }
