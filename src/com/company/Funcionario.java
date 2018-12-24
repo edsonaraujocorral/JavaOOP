@@ -1,14 +1,14 @@
 package com.company;
 
-public class Funcionario {
+//Classe abstrata nao pode ser instanciada
+public abstract class Funcionario {
 
     private String nome;
     private String cpf;
     private double salario;
 
-    public double getBonificacao() {
-            return this.salario * 0.1;
-    }
+    //Metodo abastrato => nao ha implementacao
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;
@@ -33,5 +33,4 @@ public class Funcionario {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-
 }
