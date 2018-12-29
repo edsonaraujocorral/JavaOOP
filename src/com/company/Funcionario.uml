@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="293.0" y="0.0">com.company.Funcionario</node>
+    <node x="166.0" y="188.0">com.company.FuncionarioAutenticavel</node>
+    <node x="0.0" y="325.0">com.company.Gerente</node>
+    <node x="188.0" y="325.0">com.company.Administrador</node>
+    <node x="376.0" y="325.0">Diretor</node>
+    <node x="0.0" y="430.0">com.company.SistemaInterno</node>
+    <node x="398.0" y="201.5">com.company.EditorVideo</node>
+    <node x="354.0" y="430.0">Cliente</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.EditorVideo" target="com.company.Funcionario">
+      <point x="0.0" y="-30.0" />
+      <point x="482.0" y="163.0" />
+      <point x="419.0" y="163.0" />
+      <point x="42.0" y="69.0" />
+    </edge>
+    <edge source="com.company.Gerente" target="com.company.FuncionarioAutenticavel">
+      <point x="0.0" y="-30.0" />
+      <point x="84.0" y="300.0" />
+      <point x="201.33333333333331" y="300.0" />
+      <point x="-70.66666666666669" y="43.5" />
+    </edge>
+    <edge source="Diretor" target="com.company.FuncionarioAutenticavel">
+      <point x="0.0" y="-30.0" />
+      <point x="460.0" y="300.0" />
+      <point x="342.6666666666667" y="300.0" />
+      <point x="70.66666666666669" y="43.5" />
+    </edge>
+    <edge source="com.company.FuncionarioAutenticavel" target="com.company.Funcionario">
+      <point x="0.0" y="-43.5" />
+      <point x="272.0" y="163.0" />
+      <point x="335.0" y="163.0" />
+      <point x="-42.0" y="69.0" />
+    </edge>
+    <edge source="com.company.Administrador" target="com.company.FuncionarioAutenticavel">
+      <point x="0.0" y="-30.0" />
+      <point x="0.0" y="43.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="639.0" y="292.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

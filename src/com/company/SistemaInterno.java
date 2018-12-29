@@ -3,8 +3,8 @@ package com.company;
 public class SistemaInterno {
     private int senha = 222;
 
-    public void autentica(FuncionarioAutenticavel g) {
-        boolean autenticou = g.autenticou(this.senha);
+    public void autentica(Autenticavel g) {
+        boolean autenticou = g.autentica(this.senha);
 
         if(autenticou) {
             System.out.println("Pode entrar no sistema!");
