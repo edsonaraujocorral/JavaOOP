@@ -2,15 +2,13 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        ContaCorrente cc = new ContaCorrente(111, 111);
-        cc.deposita(100.0);
+        Gerente g = new Gerente();
+        g.setSenha(222);
+        SistemaInterno si = new SistemaInterno();
+        si.autentica(g);
 
-        ContaPoupanca cp = new ContaPoupanca(222, 222);
-        cp.deposita(200.0);
-
-        cc.transfere(10.0, cp);
-
-        System.out.println("CC: " + cc.getSaldo());
-        System.out.println("CP: " + cp.getSaldo());
+        Administrador adm = new Administrador();
+        adm.setSenha(332);
+        si.autentica(adm);
     }
 }
